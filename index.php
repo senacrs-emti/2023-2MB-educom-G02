@@ -17,32 +17,26 @@ include_once 'conexao.php';
        <form action="busca.php" method="get">
          <input class="input" type="text" name="busca" id="search" placeholder="faça sua busca" required>
          <input type="submit"><i class="fas fa-search"></i></input>
-
-
-         <main id="index">
+         </div>
+       </form>
+       
+         <main id="index" class="container">
+          <div class="row">
           <?php 
-          $sql = "SELECT * FROM enem"
-          $result_query = mysqli_query($conexao, $sql);
-          while ( $row = mysqli_fetch_array($result_query, MYSQLI_ASSOC));
-          ?>
-          <?php
           $sql = "SELECT * FROM areaconhecimento";
           // executa o comando SQL no banco e retornar os dados
-          $result_query = mysqli_query( $conexao, $sql );
+          $result = mysqli_query( $conexao, $sql );
           // laco de repeticao 
-          while ( $row = mysqli_fetch_array($result_query, MYSQLI_ASSOC) );
-          { 
+          while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){       
           ?>
-          <div>
-            <h2> class="Nome"<<?php echo $dados['Imagem']?>/h2>
-            <h4>PI</h4>
-            <p class="paragrafo"><?php echo $dados['Cuidados']</p>
+          <div class="col-6">
+            <h2 class="Nome"><?php echo $row['Nome']?></h2>
+            <a href="questao.php?area=<?php echo $row['id'];?>"><img src="./img/<?php echo $row['foto'];?>" alt=""></a>
           </div>
-         <a href="questao.php?area=<?php echo $row['id'];?>"><img src="./img/<?php echo $row['foto'];?>" alt=""></a>
           <?php
           }
           ?>
-       </form>
+
      </div> 
  </header>
  <?php 
