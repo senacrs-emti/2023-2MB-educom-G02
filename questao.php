@@ -33,7 +33,10 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
           while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){       
           ?>
           <div class="col-6">
-            <h2 class="Nome"><?php echo $row['Descricao']?></h2>
+            <p class="Nome"><?php echo $row['Descricao']?></p>
+            <h2 class="Foto"><?php echo $row['Foto']?></h2>
+            <p class="correta"><?php echo $row['correta']?></p>
+            <p class="descricao"><?php echo $row['descricao']?></p>
           </div>
           <?php
           }
