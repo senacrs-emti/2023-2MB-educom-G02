@@ -32,6 +32,7 @@ include_once 'conexao.php';
           <div class="col-6">
             <h2 class="Nome"><?php echo $row['Nome']?></h2>
             <a href="questao.php?area=<?php echo $row['id'];?>"><img src="./img/<?php echo $row['foto'];?>" alt=""></a>
+            <h2 class="resolucao"><?php echo $row['descricao']?></h2>
           </div>
           <?php
           }
