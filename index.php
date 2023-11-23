@@ -10,15 +10,10 @@ include_once 'conexao.php';
 <body class="container-fluid">
 
 <header class="row">
-     <div class="col">
-     </div>
-    <a href="index.php" ><div class="col"><h1>Estuda.com</h1></div></a> 
-     <div class="col">
-       <form action="busca.php" method="get">
-         <input class="input" type="text" name="busca" id="search" placeholder="faça sua busca" required>
-         <input type="submit"><i class="fas fa-search"></i></input>
-         </div>
-       </form>
+     
+    <a href="index.php" ><div class="col"><h1 class="titulo">Estuda.com</h1></div></a> 
+  
+       
        
          <main id="index" class="container">
           <div class="row">
@@ -30,9 +25,8 @@ include_once 'conexao.php';
           while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){       
           ?>
           <div class="col-6">
-            <h2 class="Nome"><?php echo $row['Nome']?></h2>
-            <a href="questao.php?area=<?php echo $row['id'];?>"><img src="./img/<?php echo $row['foto'];?>" alt=""></a>
-            <h2 class="resolucao"><?php echo $row['descricao']?></h2>
+            <a href="questao.php?area=<?php echo $row['id'];?>"><img class="imagens" src="./img/<?php echo $row['foto'];?>" alt=""></a>
+            
           </div>
           <?php
           }
@@ -40,6 +34,7 @@ include_once 'conexao.php';
 
      </div> 
  </header>
+ 
  <?php 
 include_once 'footer.php';
 ?>
