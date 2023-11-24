@@ -11,7 +11,7 @@
       ></a>
     </section>
   </div>
-  <div class="text-center p-3" style="background-color: blue ;">
+  <div class="footer col-12">
     © 2023 Copyright: Mateus Machado, Saria Dorneles e Giovanna Pandolfo
     <a class="text-white" href="https://mdbootstrap.com/"></a>
   </div>

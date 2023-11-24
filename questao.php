@@ -1,6 +1,10 @@
 <?php
 include_once 'conexao.php';
-
+?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="./style.css?v=<?php echo rand(0,999999);?>">
+<?php
 // captura a area
 $area = $_GET['area'];
 // sql das questoes da area
@@ -15,9 +19,11 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 <body class="container-fluid">
 
 <header class="row">
-     <div class="col">
-     </div>
-    <a href="index.php"><div class="col"><h1><?php echo $row['Nome']?></h1></div></a> 
+    
+     <nav class="navbar col-12 navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.php"><?php echo $row['Nome']?></a>
+</nav>
+
 
 
 
@@ -28,10 +34,13 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
           // laco de repeticao 
           while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){       
           ?>
-          <div class="col-6">
+          <div class="col-12 mt-5 text-justify">
             <p class="Nome"><?php echo $row['Pergunta']?></p>
-            <img src="./img/<?php echo $row['Foto']?>" alt="">
-            <p class="resolucao"><?php echo $row['descricao']?></p> 
+            <div class="text-center"><img class="imagemquestao" src="./img/<?php echo $row['Foto']?>" alt=""></div>
+            <ul class="list-group">
+              <li class="resolucao mt-4 list-group-item"><?php echo $row['descricao']?></li>
+            </ul>
+             
             <div class="respostaOculta">
               <?php   
               echo $row['correta'];
@@ -46,7 +55,7 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
     
 </div>
 <div class="row">
-<button id="verRespostas" type="button" class="btn btn-outline-light">Ver Respostas</button>
+<button id="verRespostas" type="button" class="btn btn-dark mt-3">Ver Respostas</button>
 </div>
 <?php 
 

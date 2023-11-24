@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 22-Nov-2023 às 16:17
+-- Tempo de geração: 24-Nov-2023 às 13:15
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.3.27
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `questao`
+-- Banco de dados: `enem`
 --
 
 -- --------------------------------------------------------
@@ -96,7 +96,10 @@ INSERT INTO `questoes` (`id`, `Pergunta`, `Area`, `Nome`, `Foto`, `Questionario_
 (12, '(ENEM - 2014) \r\n\r\nA liberação dos gases clorofluorcarbonos (CFCs) na atmosfera pode provocar depleção de ozônio (O3) na estratosfera. O ozônio estratosférico é responsável por absorver parte da radiação ultravioleta emitida pelo Sol, a qual é nociva aos seres vivos. Esse processo, na camada de ozônio, é ilustrado simplificadamente na figura. \r\nQuimicamente, a destruição do ozônio na atmosfera por gases CFCs é decorrência da ', '1', '', 'quim1.png', 1),
 (13, '(ENEM - 2017) \r\n\r\nUm fato corriqueiro ao se cozinhar arroz é o derramamento de parte da água de cozimento sobre a chama azul do fogo, mudando-a para uma chama amarela. Essa mudança de cor pode suscitar interpretações diversas, relacionadas às substâncias presentes na água de cozimento. Além do sal de cozinha (NaCl) nela se encontram carboidratos, proteínas e sais minerais. \r\n\r\nCientificamente, sabe-se que essa mudança de cor da chama ocorre pela ', '1', '', '', 1),
 (14, '(ENEM - 2015) \r\n\r\nA soda cáustica pode ser usada no desentupimento de encanamentos domésticos e tem, em sua composição, o hidróxido de sódio como principal componente, além de algumas impurezas. A soda normalmente é comercializada na forma sólida, mas que apresenta aspecto “derretido” quando exposta ao ar por certo período. \r\n\r\n  \r\n\r\nO fenômeno de “derretimento” decorre da ', '1', '', '', 1),
-(15, '(ENEM - 2020) \r\n\r\nUm microempresário do ramo de cosméticos utiliza óleos essenciais e quer produzir um creme com fragrância de rosas. O principal componente do óleo de rosas tem cadeia poli-insaturada e hidroxila em carbono terminal. O catálogo dos óleos essenciais apresenta, para escolha da essência, estas estruturas químicas: \r\n\r\nQual substância o empresário deverá utilizar?  ', '1', '', 'quim4.png', 1);
+(15, '(ENEM - 2020) \r\n\r\nUm microempresário do ramo de cosméticos utiliza óleos essenciais e quer produzir um creme com fragrância de rosas. O principal componente do óleo de rosas tem cadeia poli-insaturada e hidroxila em carbono terminal. O catálogo dos óleos essenciais apresenta, para escolha da essência, estas estruturas químicas: \r\n\r\nQual substância o empresário deverá utilizar?  ', '1', '', 'quim4.png', 1),
+(16, '(Enem-2018) Por meio de reações químicas que envolvem carboidratos, lipídeos e proteínas, nossas células obtêm energia e produzem gás carbônico e água. A oxidação da glicose no organismo humano libera energia, conforme ilustra a equação química, sendo que aproximadamente 40% dela é disponibilizada para atividade muscular. \r\n\r\nreto C com 6 subscrito reto H com 12 subscrito reto O com 6 parêntese esquerdo reto s parêntese direito espaço subscrito fim do subscrito espaço mais espaço 6 reto O com 2 parêntese esquerdo reto g parêntese direito subscrito fim do subscrito espaço seta para a direita espaço 6 CO com 2 parêntese esquerdo reto g parêntese direito subscrito fim do subscrito espaço mais espaço 6 reto H com 2 subscrito reto O com parêntese esquerdo reto l parêntese direito subscrito fim do subscrito espaço espaço espaço espaço incremento com reto c subscrito reto H espaço igual a espaço menos 2800 espaço kJ\r\nConsidere as massas molares em (em g mol-1):  \r\n\r\nreto H igual a 1 ponto e vírgula espaço reto C igual a 12 ponto e vírgula espaço reto O igual a 16.\r\nLIMA, L.M.; FRAGA, C.A.M; BARREIRO, E.J. Química na saúde. São Paulo: Sociedade Brasileira de Química, 2010 (adaptado). \r\n\r\nNa oxidação de 1,0 grama de glicose, a energia obtida para atividade muscular, em quilojoule, é mais próxima de ', '1', '', 'quim4.png', 1),
+(17, '(ENEM 2014) O boxe está perdendo cada vez mais espaço para um fenômeno relativamente recente do esporte, o MMA. E o maior evento de Artes Marciais Mistas do planeta é o Ultimate Fighting Championship, ou simplesmente UFC. O ringue, com oito cantos, foi desenhado para deixar os lutadores com mais espaço para as lutas. Os atletas podem usar as mãos e aplicar golpes de jiu-jitsu. Muitos podem falar que a modalidade é uma espécie de vale-tudo, mas isso já ficou no passado: agora, a modalidade tem regras e acompanhamento médico obrigatório para que o esporte apague o estigma negativo. \r\n\r\nCORREIA, D. UFC: saiba como o MMA nocauteou o boxe em oito golpes. Veja, 10 jun. 2011 (fragmento) \r\n\r\nO processo de modificação das regras do MMA retrata a tendência de redimensionamento de algumas práticas corporais, visando enquadrá-las em um determinado formato. \r\nQual o sentido atribuído a essas transformações incorporadas historicamente ao MMA? ', '3', '', '', 1),
+(18, '(Enem/2016) No aniversário do primeiro decênio da Marcha sobre Roma, em outubro de 1932, Mussolini irá inaugurar sua Via dell Impero; a nova Via Sacra do Fascismo, ornada com estátuas de César, Augusto, Trajano, servirá ao culto do antigo e à glória do Império Romano e de espaço comemorativo do ufanismo italiano. Às sombras do passado recriado ergue-se a nova Roma, que pode vangloriar-se e celebrar seus imperadores e homens fortes; seus grandes poetas e apólogos como Horácio e Virgílio. \r\n\r\nSILVA, G. História antiga e usos do passado um estudo de apropriações da Antiguidade sob o regime de Vichy. São Paulo: Annablume, 2007 (adaptado). \r\n\r\nA retomada da Antiguidade clássica pela perspectiva do patrimônio cultural foi realizada com o objetivo de  ', '2', '', '', 1);
 
 -- --------------------------------------------------------
 
@@ -118,7 +121,11 @@ CREATE TABLE `resolucoes` (
 
 INSERT INTO `resolucoes` (`id`, `correta`, `descricao`, `AreaID`, `Questoes_id`) VALUES
 (0, 'C', 'b) 164 076. \r\nc) 213 444. \r\nd) 284 592. \r\ne) 291 582. ', 4, 1),
-(1, 'A', 'A) 1 \r\n\r\nB) 2. \r\n\r\nC) 3. \r\n\r\nD) 4. \r\n\r\nE) 5. ', 4, 2);
+(1, 'A', 'A) 1 \r\n\r\nB) 2. \r\n\r\nC) 3. \r\n\r\nD) 4. \r\n\r\nE) 5. ', 4, 2),
+(3, 'C', 'a) 114 708. \r\nb) 164 076. \r\nc) 213 444. \r\nd) 284 592. \r\ne) 291 582. ', 4, 0),
+(4, 'E', 'A) A modificação das regras busca associar valores lúdicos ao MMA, possibilitando a participação de diferentes populações como atividade de lazer. \r\n\r\nB) As transformações do MMA aumentam o grau de violência das lutas, favorecendo a busca de emoções mais fortes tanto aos competidores como ao público. \r\n\r\nC) As mudanças de regras do MMA atendem à necessidade de tornar a modalidade menos violenta, visando sua introdução nas academias de ginástica na dimensão da saúde. \r\n\r\nD) As modificações incorporadas ao MMA têm por finalidade aprimorar as técnicas das diferentes artes marciais, favorecendo o desenvolvimento da modalidade enquanto defesa pessoal. \r\n\r\nE) As transformações do MMA visam delimitar a violência das lutas, preservando a integridade dos atletas e enquadrando a modalidade no formato do esporte de espetáculo. ', 4, 17),
+(5, 'B', 'a) afirmar o ideário cristão para reconquistar a grandeza perdida. \r\nb) utilizar os vestígios restaurados para justificar o regime político. \r\nc) difundir os saberes ancestrais para moralizar os costumes sociais. \r\nd) refazer o urbanismo clássico para favorecer a participação política. \r\ne) recompor a organização republicana para fortalecer a administração estatal. ', 2, 18),
+(6, 'C', 'A) 20 N \r\n\r\nB)100 N \r\n\r\nC) 200 N \r\n\r\nD) 1 000 N \r\n\r\nE) 5 000 N nistração estatal. ', 1, 7);
 
 --
 -- Índices para tabelas despejadas

@@ -1,3 +1,7 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
 .imagens{
     margin-top: 20px;
     margin-left: 100px;
@@ -7,4 +11,13 @@
 .titulo{
     margin-left: 470px;
     margin-top: 30px;
+}
+.footer{
+    width:500%;
+    background-color: black;
+}
+.btn-dark{
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 30px;
 }

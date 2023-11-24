@@ -9,9 +9,10 @@ include_once 'conexao.php';
 </head class="cabecalho">
 <body class="container-fluid">
 
-<header class="row">
-     
-    <a href="index.php" ><div class="col"><h1 class="titulo">Estuda.com</h1></div></a> 
+<header class="row">     
+<nav class="navbar col-12 navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Estuda.com</a>
+</nav>
   
        
        
@@ -25,7 +26,7 @@ include_once 'conexao.php';
           while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){       
           ?>
           <div class="col-6">
-            <a href="questao.php?area=<?php echo $row['id'];?>"><img class="imagens" src="./img/<?php echo $row['foto'];?>" alt=""></a>
+            <a href="questao.php?area=<?php echo $row['id'];?>"><div><img class="imagens" src="./img/<?php echo $row['foto'];?>" alt=""></div></a>
             
           </div>
           <?php

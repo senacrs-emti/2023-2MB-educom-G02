@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$database = "questao";
+$database = "enem";
 $username = "root";
 $password = "";
 // Create connection
