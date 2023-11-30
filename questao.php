@@ -34,7 +34,7 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
           // laco de repeticao 
           while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){       
           ?>
-          <div class="col-12 mt-5 text-justify">
+          <div class=" col-12 mt-5 font-weight-normal text-center">
             <p class="Nome"><?php echo $row['Pergunta']?></p>
             <div class="text-center"><img class="imagemquestao" src="./img/<?php echo $row['Foto']?>" alt=""></div>
             <ul class="list-group">

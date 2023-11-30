@@ -1,23 +1,14 @@
-<footer class="row3">
-<footer class="bg-blue text-center text-white">
-  <!-- Grid container -->
-  <div class="container p-4 pb-0">
-    <!-- Section: Social media -->
-    <section class="mb-4">
 
-      <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-github"></i
-      ></a>
-    </section>
-  </div>
-  <div class="footer col-12">
-    © 2023 Copyright: Mateus Machado, Saria Dorneles e Giovanna Pandolfo
-    <a class="text-white" href="https://mdbootstrap.com/"></a>
-  </div>
-  <!-- Copyright -->
-</footer>
+<div class="container">
+<footer>
+    
+<div class="text-center col-12" style="text-dark mt" >
+      <p>Giovanna Pandolfo, Mateus Machado e Saria Dorneles</p> 
+        
+    </div>
     </footer>
+</div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

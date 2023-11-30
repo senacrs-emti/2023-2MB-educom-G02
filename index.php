@@ -6,17 +6,19 @@ include_once 'conexao.php';
  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
  <link rel="stylesheet" href="./style.css?v=<?php echo rand(0,999999);?>">
  <title>Estuda.com</title>
-</head class="cabecalho">
-<body class="container-fluid">
+ <body >
 
+
+</head class=" container-fluid">
 <header class="row">     
 <nav class="navbar col-12 navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Estuda.com</a>
+  <a class="navbar-brand ml-2"  href="#">Estuda.com</a>
+  <a class="navbar-brand ml-2 text-center"  href="#">Área do Conhecimento</a>
 </nav>
   
        
-       
-         <main id="index" class="container">
+      
+        <main id="index" class="container">
           <div class="row">
           <?php 
           $sql = "SELECT * FROM areaconhecimento";
@@ -25,17 +27,17 @@ include_once 'conexao.php';
           // laco de repeticao 
           while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){       
           ?>
-          <div class="col-6">
+          <div class="col-6 ">
             <a href="questao.php?area=<?php echo $row['id'];?>"><div><img class="imagens" src="./img/<?php echo $row['foto'];?>" alt=""></div></a>
             
           </div>
           <?php
           }
           ?>
-
+        
      </div> 
  </header>
- 
+ </body>
  <?php 
 include_once 'footer.php';
 ?>
