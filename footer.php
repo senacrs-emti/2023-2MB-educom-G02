@@ -2,7 +2,7 @@
 <div class="container">
 <footer>
     
-<div class="text-center col-12" style="text-dark mt" >
+<div class="text-center col-12 " style="text-dark mt" >
       <p>Giovanna Pandolfo, Mateus Machado e Saria Dorneles</p> 
         
     </div>

@@ -9,11 +9,11 @@ include_once 'conexao.php';
  <body >
 
 
-</head class=" container-fluid">
+
 <header class="row">     
-<nav class="navbar col-12 navbar-dark bg-dark">
+<nav class="navbar col-12 navbar-dark bg-dark" id="hh">
   <a class="navbar-brand ml-2"  href="#">Estuda.com</a>
-  <a class="navbar-brand ml-2 text-center"  href="#">Área do Conhecimento</a>
+  <a class="tt"  href="#">Áreas do Conhecimento</a>
 </nav>
   
        
